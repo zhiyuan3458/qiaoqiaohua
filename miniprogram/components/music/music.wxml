@@ -1,0 +1,4 @@
+<!--components/music/music.wxml-->
+<view class="music custom-class" bindtap='playMusic'>
+  <image mode="widthFix" src="../../images/music.png" class="{{ isOn ? 'music-on': 'music-paused' }}"></image>
+</view>

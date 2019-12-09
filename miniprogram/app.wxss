@@ -1,0 +1,16 @@
+/**app.wxss**/
+.container {
+  width: 100%;
+}
+
+/* .container::after {
+  content: '5646 ';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400rpx;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575643870151&di=216de257836ab3813edc6c01ab1da5df&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F03%2F78%2F63%2F5757c1864a42571.jpg%2521r850%2Ffw%2F800') no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+} */

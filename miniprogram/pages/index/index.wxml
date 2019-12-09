@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <music custom-class="music-container"></music>
+  <view class="barrage-container">
+    <order-barrage barrage-arr="{{ messages }}"></order-barrage>
+  </view>
+  <view class="liuyan-block">
+    <view class="fill-form">
+      <input type="text" class="input" value="{{ content }}"></input>
+      <label for="send">
+        <button id="send" class="send">发送</button>
+      </label>
+    </view>
+    <view class="label-box">
+      <view class="label-item" wx:for="{{ tips }}" wx:key="{{ item.id }}">
+        {{ item.content }}
+      </view>
+      <text class="change">换一批</text>
+    </view>
+  </view>
+  <view class="bg-bottom">
+   <view class="fish"></view>
+  </view>
+</view>

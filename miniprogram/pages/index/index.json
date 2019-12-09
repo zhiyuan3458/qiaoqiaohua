@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "music": "../../components/music/music",
+    "order-barrage": "../../components/order-barrage/order-barrage"
+  }
+}

@@ -1,0 +1,28 @@
+/* components/music/music.wxss */
+.music {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.music image {
+  max-width: 100%;
+  height: auto;
+}
+
+.music-on {
+  animation: image-rotate 3s linear infinite;
+}
+
+.music-paused {
+  animation-play-state: paused;
+}
+
+@keyframes image-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

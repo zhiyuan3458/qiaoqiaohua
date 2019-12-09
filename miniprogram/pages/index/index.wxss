@@ -1,0 +1,135 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: url('http://p2.qhimgs4.com/t0179a8d0ed5883b906.jpg') no-repeat 1% 1%;
+  background-attachment: fixed;
+  background-size: 100%; 
+}
+
+.music-container {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.barrage-container {
+  padding-top: 150rpx;
+}
+
+.liuyan-block {
+  width: 100%;
+  margin-top: 100rpx;
+  animation: liuyan-animation 3s ease-out;
+}
+
+.liuyan-block .fill-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+
+.liuyan-block .fill-form .input {
+  flex: 0.95;
+  border-bottom: 1rpx solid #ddd;
+  padding-bottom: 5rpx;
+  padding-left: 10rpx;
+  margin-right: 10rpx;
+  color: #333;
+}
+
+.liuyan-block .fill-form #send {
+  width: 140rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25rpx;
+  padding: 10rpx 15px;
+  box-sizing: border-box;
+  background: linear-gradient(to top right, #34ebe9, #d0ffae);
+  color: white;
+}
+
+.liuyan-block .label-box {
+  display: block;
+  margin: 40rpx 18rpx;
+  overflow: hidden;
+}
+
+.liuyan-block .label-box .label-item {
+  float: left;
+  color: #eee;
+  border: 1rpx dashed white;
+  padding: 8rpx 10rpx;
+  margin-right: 30rpx;
+  margin-bottom: 25rpx;
+  text-align: center;
+}
+
+.liuyan-block .label-box .change {
+  color: #eee;
+  font-size: 24rpx;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.bg-bottom {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575643870151&di=216de257836ab3813edc6c01ab1da5df&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F03%2F78%2F63%2F5757c1864a42571.jpg%2521r850%2Ffw%2F800');
+  background-size: 100% 100%;
+  filter: opacity(20%);
+}
+
+.fish {
+  width: 174px;
+	height: 126px;
+  position: absolute;
+  top: 5%;
+  background: url('https://demo.mycodes.net/CSS/CSS3_shayuyoudong/image/fish8.png') no-repeat left top;
+  animation: fish-animation1 .8s steps(8) infinite, fish-animation2 12s linear infinite;
+}
+
+@keyframes liuyan-animation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fish-animation1 {
+		0%{
+     
+		}
+		100%{
+			background-position: left -1008px;
+		}
+	}
+
+  @keyframes fish-animation2 {
+		0%{
+			transform: translate(-100%, 0);
+		}
+		100%{
+			transform: translate(300%, 0);
+		}
+	}
+
+@keyframes run1 {
+  40% {
+    transform: translateX(110%);   
+  }
+  60% {
+    transform: translateX(220%) rotate(180deg);
+  }
+  100% {
+    transform: translateX(40%);
+    transform: rotate(-180deg);
+  }
+}

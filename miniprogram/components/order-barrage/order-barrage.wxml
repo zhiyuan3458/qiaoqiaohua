@@ -1,0 +1,25 @@
+<!--components/order-barrage/order-barrage.wxml-->
+<view class="order-barrage-container" style="height: {{ height }} + 'px'">
+<block wx:if="{{ row > 1 }}">
+  <view
+    class="barrage-row"
+    wx:for="{{ _barrageArr }}"
+    wx:key="{{ index }}"
+    style="animation: dmAnimation {{ _speeds[index] }}s linear infinite;"
+  >
+  <!-- style="animation: dmAnimation {{ _speeds[index] }}s linear infinite;"     -->
+    <view class="barrage-item" wx:for="{{ item }}" wx:key="{{ item.id }}">
+      <image class="cartoon" mode="widthFix" src="../../images/cartoon-bg.png"></image>
+      <view class="content">{{ item.content }}</view>
+      <image class="qipao" mode="widthFix" src="../../images/qipao.png"></image>
+    </view>
+  </view>
+  </block>
+  <block wx:else>
+    <view class="barrage-row" style="animation: dmAnimation {{ _speeds[index] }}s linear 1s infinite;">
+      <view class="barrage-item" wx:for="{{ _barrageArr }}" wx:key="{{ item.id }}">
+        <text>{{ item.content }}</text>
+      </view>
+    </view>
+  </block>
+</view>
